@@ -1,0 +1,11 @@
+---
+apiVersion: apps.open-cluster-management.io/v1
+kind: Channel
+metadata:
+  name: nginx-simple-3
+  namespace: nginx-simple-3
+spec:
+  type: GitHub
+  pathname: https://github.com/cdoan1/nginx-simple.git
+  #secretRef:
+  #  name: my-github-secret
