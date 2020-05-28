@@ -11,7 +11,7 @@ metadata:
   labels:
     app: nginx-simple
 spec:
-  channel: nginx-simple-2/nginx-simple-3
+  channel: nginx-simple-3/nginx-simple-3
   placement:
     placementRef:
       name: nginx-simple-3
