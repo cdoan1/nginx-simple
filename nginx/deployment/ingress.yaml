@@ -1,0 +1,12 @@
+apiVersion: networking.k8s.io/v1beta1
+kind: Ingress
+metadata:
+  name: nginx-simple-virtual-host-ingress
+spec:
+  rules:
+  - host: nginx-simple.apps.south-east.demo.red-chesterfield.com
+    http:
+      paths:
+      - backend:
+          serviceName: nginx-simple-service
+          servicePort: 8080
